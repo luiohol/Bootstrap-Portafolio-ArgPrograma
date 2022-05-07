@@ -1,0 +1,496 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+}
+
+/* Boton Arriba config */
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+
+  margin: auto;
+  background: linear-gradient(#eedfcf, #136c92);
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+}
+
+
+/* Navegación */
+
+.navbar-nav {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 2px 0;
+}
+
+/* Efecto botones */
+.navbar-nav .nav-item :hover {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  padding: 10px 30px;
+  border: 1px;
+  border-radius: 1000px;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(1, 5, 252, 0.5);
+  transform: translateY(-3px);
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  -webkit-transform: translateY(-1px);
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -o-transform: translateY(-1px);
+}
+
+/* Boton menu superior */
+
+.menu-bottom {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 20px;
+  z-index: 2;
+  display : none;
+  
+}
+
+
+
+/* MODO OSCURO (DESACTIVADO) */
+/* --luna: ; */
+/* .switch {
+  
+  font-size: 10px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+} */
+
+/* dimenciones por defecto de HTML checkbox */
+/* .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+} */
+
+/* deslizador */
+/* .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #32323a;
+  transition: .4s;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+} */
+
+/* .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  ;
+  transition: .4s;
+} */
+
+/* input:checked+.slider {
+  background-color: #303136;
+}
+
+input:checked+.slider:before {
+  transform: translateX(1.5em);
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+} */
+
+/* FIN BOTON MODO NOCTURNO */
+
+
+/* Banner Header */
+.banner {
+  width: 100;
+  height: 300px;
+  background: url("../img/banner.jpg")no-repeat center/cover;
+  padding: 50px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  opacity: 0.9;
+  /*espaciado con la div de abajo*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.banner h2,
+.banner p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+/* imagen circular */
+div.avatar {
+  /* valores para definir el tamaño de tu círculo */
+  height: 100px;
+  width: 100px;
+  /* los siguientes valores son independientes del tamaño del círculo */
+  background-repeat: no-repeat;
+  background-position: 100%;
+  border-radius: 150%;
+  background-size: 100% auto;
+  border: 1px outset #220f0f;
+  margin-bottom: -100px /*Lo deja en centro */
+}
+
+
+/*--------------------------------------------------------------
+# Sobre Mi
+--------------------------------------------------------------*/
+
+
+.about {
+  margin-top: 60px;
+  margin-bottom: 10px;
+
+}
+
+.about h2 {
+  text-decoration: underline rgb(2, 14, 36);
+  text-underline-offset: 25%;
+}
+
+.about p {
+  justify-content: center;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+/*--------------------------------------------------------------
+# EDUCACIÓN Y EXPERIENCIA
+--------------------------------------------------------------*/
+.edu {
+  margin-bottom: 40px;
+}
+
+.edu .edu-title {
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #050d18;
+  text-decoration: underline rgb(2, 14, 36);
+  text-underline-offset: 25%;
+}
+
+.edu .edu-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #000000;
+  position: relative;
+}
+
+.edu .edu-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.edu .edu-item h5 {
+  font-size: 16px;
+  background: #afa58f6b;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.edu .edu-item ul {
+  padding-left: 20px;
+}
+
+.edu .edu-item ul li {
+  padding-bottom: 10px;
+}
+
+.edu .edu-item:last-child {
+  padding-bottom: 0;
+}
+
+.edu .edu-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: rgb(168, 164, 164);
+  border: 2px solid #05234d;
+}
+
+
+
+
+/* Akills Habilidades*/
+
+.section-title h2 {
+  text-decoration: underline rgb(2, 14, 36);
+  text-underline-offset: 25%;
+}
+
+.section-title p {
+  justify-content: center;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* ICONOS */
+
+
+
+/* hr no funciona VER! */
+.skills .container hr {
+  border: 0;
+  height: 2px;
+  text-align: center;
+  background-image: linear-gradient(left, #fff, #000, #fff);
+}
+
+
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
+  color: #000000;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.line-mf {
+  width: 80px;
+  height: 2px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #0078ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #298eff;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.col {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: none;
+
+}
+
+.col:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.card-img {
+  display: block;
+  overflow: hidden;
+}
+
+.card img {
+  transition: all 0.8s;
+  -webkit-transition: all 0.s;
+  -moz-transition: all 0.s;
+  -ms-transition: all 0.s;
+  -o-transition: all 0.s;
+}
+
+.card-body {
+  background: transparent;
+}
+
+.mas {
+
+  font-size: 1.2rem;
+  color: #0078ff;
+  float: right;
+
+}
+
+/* Social */
+
+.social {
+  margin: 10px;
+  transform: translateX(1.5em);
+}
+
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-decoration: underline rgb(2, 14, 36);
+  text-underline-offset: 25%;
+}
+
+/* link centrados */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 30px;
+  color: #000000c7;
+}
+
+/* Tamaño icono */
+.links a i {
+  font-size: 3rem;
+}
+
+
+/* Flecha Arriba */
+
+.up{
+  height: 30px;
+  width: 50px;
+  position: fixed;
+  background: rgba(82, 56, 143, 0.397);
+  text-decoration: none;
+  text-align: center;
+  line-height: 1px;
+  color: width; color: black;
+  font-size: 30px;
+  border-radius:25%;
+  right: 50px;
+  margin-bottom: -100px;
+  -webkit-border-radius:25%;
+  -moz-border-radius:25%;
+  -ms-border-radius:25%;
+  -o-border-radius:25%;
+}
+
+
+/* footer links 
+versión anterior*/
+
+/* .footer-links {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-container ul {
+  margin: 0 auto;
+}
+
+.footer-container ul li {
+  line-height: 2;
+} */
+
+.footer {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
