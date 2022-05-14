@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid transparent;
+  
 }
 
 /* Boton Arriba config */
@@ -13,6 +13,7 @@ html{
 body {
 
   margin: auto;
+  padding: 0;
   background: linear-gradient(#eedfcf, #136c92);
   font-family: 'Poppins', sans-serif;
   font-family: 'Raleway', sans-serif;
@@ -54,17 +55,7 @@ body {
   -o-transform: translateY(-1px);
 }
 
-/* Boton menu superior */
 
-.menu-bottom {
-  position: absolute;
-  cursor: pointer;
-  top: 15px;
-  right: 20px;
-  z-index: 2;
-  display : none;
-  
-}
 
 
 
@@ -145,6 +136,7 @@ input:checked+.slider:before {
   justify-content: flex-end;
 
 }
+
 
 .banner h2,
 .banner p {
@@ -494,3 +486,19 @@ versión anterior*/
   padding-bottom: 20px;
 }
 
+@media(max-width: 700px){
+    .navbar ul.navbar{
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background:rgba(7, 1, 20, 0.904);
+    height: 100%;
+    padding: 2px;
+    
+}
+
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
